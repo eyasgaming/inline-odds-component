@@ -5,8 +5,10 @@
 const template = document.createElement('template');
 
 template.innerHTML = `
-        <a href="url" target="lancebet" style="background: #F8F838;">N/A</a>
+    <span id="odds"><a href="url" target="lancebet"></a></span>
   `
+
+//     <span id="odds" style="background: #F8F838; border-radius: 5px; padding: 5px 5px 5px 5px;"><a href="url" target="lancebet" style="background: #F8F838; border-radious 6em">N/A</a></span>
 
 class Odds extends HTMLElement {
 
@@ -36,6 +38,8 @@ class Odds extends HTMLElement {
 
     connectedCallback() {
         this.$odds = this._shadowRoot.querySelector('a');
+        this.$odds.innerHTML = this.textContent
+        this.$odds.href = this.target + "?affiliateId=" + this.affiliateId // default url in case no odds found.
         this.getOdds(this.id);
     }
 
@@ -74,7 +78,7 @@ class Odds extends HTMLElement {
         console.log("target: " + this.target)
 
         this.$odds.innerHTML = (Number(price) / 1000).toFixed(2);
-        this.$odds.href = this.target + "?affiliateId" + this.affiliateId + "&coupon=single|" + this.id + "||append|lancebet";
+        this.$odds.href = this.target + "?affiliateId=" + this.affiliateId + "&coupon=single|" + this.id + "||append|lancebet";
     }
 
 }
