@@ -19,6 +19,15 @@ It can either point to the production kambi/eyas environment, or the non product
 This is controlled by the attribute:     
     prod = false;  or   prod = true;
 
+# styling the odds
+You can control the style of the odds in your CSS, e.g:
+
+        inline-odds {
+            border-radius: 5px; 
+            padding: 5px 5px 5px 5px;
+            background:  #F8F838;
+        }
+
 # Outcome Id
 The Id is a valid kambi outcome ID.  
 To get this ID, you can use: https://kambi-explorer.eyasgaming.net/.
