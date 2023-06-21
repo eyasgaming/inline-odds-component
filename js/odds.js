@@ -7,7 +7,6 @@ const template = document.createElement('template');
 template.innerHTML = `
     <span id="odds"><a href="url" target="lancebet"></a></span>
   `
-
 //     <span id="odds" style="background: #F8F838; border-radius: 5px; padding: 5px 5px 5px 5px;"><a href="url" target="lancebet" style="background: #F8F838; border-radious 6em">N/A</a></span>
 
 class Odds extends HTMLElement {
