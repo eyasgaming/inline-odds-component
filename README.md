@@ -2,7 +2,7 @@
 Inline odds is a web component which provides a tag: 
 
     <inline-odds id="2958451129">N/A</inline-odds>
-    
+
 For an example of useage, please see index.html.
 
 # Links
@@ -12,7 +12,7 @@ e.g.
 
 https://lancebet-com-uat.eyasgaming.net/?affiliateId=AY2838324479&coupon=single|2958451129||append|lancebet
 
-NOTE: the produdction kambi and lancebet sites are not yet live, so non prod must be used.  links to the non prod lancebet site (lancebet-com-uat.eyasgaming.net) can only be "seen" if the IP of the user is whitelisted with Eyas.  Please contact simon.hobbs@eyasgaming.com for whitelisting.
+**NOTE:** the produdction kambi and lancebet sites are not yet live, so non prod must be used.  links to the non prod lancebet site (lancebet-com-uat.eyasgaming.net) can only be "seen" if the IP of the user is whitelisted with Eyas.  Please contact simon.hobbs@eyasgaming.com for whitelisting.
 
 # Environment
 It can either point to the production kambi/eyas environment, or the non production.
@@ -29,5 +29,5 @@ To get an outcome id, first select "Main" from the markets dropdown, either sear
 If the outcome does not exist, or the match has ended, the inner text in inline-odds component "N/A" in the above exmaple is shown.
 
 # How to include:
-Add  <script src="./js/odds.js"></script> at the end of the boddy tag.
+Add  `<script src="./js/odds.js"></script>` at the end of the boddy tag.
 
