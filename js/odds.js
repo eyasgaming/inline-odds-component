@@ -77,7 +77,7 @@ class Odds extends HTMLElement {
         console.log("target: " + this.target)
 
         this.$odds.innerHTML = (Number(price) / 1000).toFixed(2);
-        this.$odds.href = this.target + "?affiliateId=" + this.affiliateId + "&coupon=single|" + this.id + "||append|lancebet";
+        this.$odds.href = this.target + "?affiliateId=" + this.affiliateId + "&coupon=single|" + this.id + "||append|lance";
     }
 
 }

@@ -1,7 +1,16 @@
 # Introduction 
 Inline odds is a web component which provides a tag: <inline-odds id="2958451129">N/A</inline-odds>
 For an example of useage, please see index.html.
-Clicking on the odds will take the user to the lancebetting website with the corresponding 
+
+#links
+Clicking on the odds will take the user to the lancebetting website with the corresponding outcome added 
+to the betslip. If there are no odds, it will just take the user to the lancebetting home page.
+
+e.g.
+
+https://lancebet-com-uat.eyasgaming.net/?affiliateId=AY2838324479&coupon=single|2958451129||append|lancebet
+
+NOTE: the produdction kambi and lancebet sites are not yet live, so non prod must be used.  links to the non prod lancebet site (lancebet-com-uat.eyasgaming.net) can only be "seen" if the IP of the user is whitelisted with Eyas.  Please contact simon.hobbs@eyasgaming.com for whitelisting.
 
 #Environment
 It can either point to the production kambi/eyas environment, or the non production.
