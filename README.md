@@ -1,3 +1,6 @@
+# Version
+2.0
+
 # Introduction 
 Inline odds is a web component which provides a tag: 
 
