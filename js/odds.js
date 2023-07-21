@@ -17,7 +17,7 @@ class Odds extends HTMLElement {
     prodUrl = "https://graphql.kambicdn.com"
 
     nonProdTarget = "https://lancebet-com-uat.eyasgaming.net/home"
-    prodTarget = "https://www.lancebet.com/home"
+    prodTarget = "https://www.lancebetting.com/home"
 
     constructor() {
         super();
