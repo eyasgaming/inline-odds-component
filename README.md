@@ -1,7 +1,7 @@
 # Introduction 
 Inline odds is a web component which provides a tag: 
 
-    <inline-odds id="2958451129">N/A</inline-odds>
+    <inline-odds prod="true" id="2958451129">N/A</inline-odds>
 
 For an example of useage, please see index.html.
 
@@ -17,7 +17,9 @@ https://lancebet-com-uat.eyasgaming.net/?affiliateId=AY2838324479&coupon=single|
 # Environment
 It can either point to the production kambi/eyas environment, or the non production.
 This is controlled by the attribute:     
-    prod = false;  or   prod = true;
+    prod="false"  or   prod="true"
+
+If indefined, it will default to prod.
 
 # styling the odds
 You can control the style of the odds in your CSS, e.g:
@@ -25,7 +27,7 @@ You can control the style of the odds in your CSS, e.g:
         inline-odds {
             border-radius: 5px; 
             padding: 5px 5px 5px 5px;
-            background:  #F8F838;
+            background:  #F8F838;ß
         }
 
 # Outcome Id

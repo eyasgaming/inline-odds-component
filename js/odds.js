@@ -10,16 +10,14 @@ template.innerHTML = `
 
 class Odds extends HTMLElement {
 
-    // You can edit these:
-    prod = false;
     affiliateId = "AY2838324479"
 
     // Do not edit anyething below this line
     nonProdUrl = "https://graphql.cts.kambicdn.com"
     prodUrl = "https://graphql.kambicdn.com"
 
-    nonProdTarget = "https://lancebet-com-uat.eyasgaming.net"
-    prodTarget = "https://www.lancebet.com"
+    nonProdTarget = "https://lancebet-com-uat.eyasgaming.net/home"
+    prodTarget = "https://www.lancebet.com/home"
 
     constructor() {
         super();
@@ -32,6 +30,14 @@ class Odds extends HTMLElement {
 
     get id() {
         return this.getAttribute('id');
+    }
+
+    get prod() {
+        const isProd = this.getAttribute('prod');
+
+        // return true if isProd is not defined
+        return isProd === null || isProd === 'true';
+
     }
 
     connectedCallback() {
@@ -72,10 +78,6 @@ class Odds extends HTMLElement {
     }
 
     renderPrice(price) {
-        console.log("prod: " + this.prod)
-        console.log("url: " + this.url)
-        console.log("target: " + this.target)
-
         this.$odds.innerHTML = (Number(price) / 1000).toFixed(2).toLocaleString();
         this.$odds.href = this.target + "?affiliateId=" + this.affiliateId + "&coupon=single|" + this.id + "||append|lance";
     }
